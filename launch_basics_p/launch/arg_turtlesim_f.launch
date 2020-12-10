@@ -1,0 +1,13 @@
+<launch>
+
+<arg name="varb" value="255" />
+<arg name="varg" value="255" />
+<arg name="varr" value="255" />
+
+<param name="turtlesim/background_b" value="$(arg varb)" />
+<param name="turtlesim/background_g" value="$(arg varg)" />
+<param name="turtlesim/background_r" value="$(arg varr)" />
+
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim" />
+
+</launch>

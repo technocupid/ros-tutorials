@@ -1,0 +1,8 @@
+<launch>
+
+<node pkg="topic_basics_p" type="pub_py_f_e.py" name="pub_py_n" output="screen" />
+<node type="sub_cpp_e" pkg="topic_basics_p" name="sub_cpp_n" output="screen" />
+
+<remap from="my_first_t" to="my_second_t" />
+
+</launch>
